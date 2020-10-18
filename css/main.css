@@ -64,7 +64,7 @@ header{
 	 background: none !important;
 }
 .navbar-toggler{
-  padding: .0rem .75rem;
+  padding: .rem .75rem;
 }
 .navbar {
   z-index: 3;
