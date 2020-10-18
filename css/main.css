@@ -34,7 +34,7 @@ header{
   font-size:14px;  
 }
 .h1, h1 {
-    font-size: 2.0rem;
+    font-size: 2.0rem !important;
 }
 .container{
   max-width: 1140px;
@@ -64,7 +64,7 @@ header{
 	 background: none !important;
 }
 .navbar-toggler{
-  padding: .rem .75rem;
+  padding: .rem .75rem !important;
 }
 .navbar {
   z-index: 3;
