@@ -34,10 +34,11 @@ header{
   font-size:14px;  
 }
 .h1, h1 {
-    font-size: 2.0rem !important;
+  margin-top: 5px;
+    font-size: 1.9rem !important;
 }
 .container{
-  max-width: 1140px;
+  max-width: 1170px;
   padding-top: 31px;
   margin: auto;
 }
@@ -69,8 +70,12 @@ header{
 .navbar {
   z-index: 3;
   padding: 0;
+  margin-bottom: -6px;
 }
 .navbar-light .navbar-nav .nav-link {
+  padding-left: 1.1rem;
+  padding-right: 1rem;
+
     color: rgba(0,0,0,.9);
 }
 .navbar-light .navbar-brand{
@@ -83,10 +88,13 @@ a.navbar-brand{
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  font-family: HelveticaNeueCyr;
-  font-size: 12px;
-  font-weight: 100;
-  padding: 58px 0 10px 31px;
+  font-family: HelveticaNeueCyr-Thin;
+  font-size: 12.2px;
+  word-spacing: 3px;
+  margin-right: 1.4rem;
+  /*font-weight: 100;
+  text-align:left;*/
+  padding: 53px 0 23px 29px;
 }
 
 .dropright .dropdown-toggle::after{
@@ -94,7 +102,7 @@ a.navbar-brand{
   border-width: 0 1px 1px 0;
   display: inline-block;
   padding: 3px 3px 3px 3px;
-  margin-left: 25px;
+  margin-left: 80px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   border-left:0;
@@ -106,29 +114,35 @@ a.navbar-brand{
 }
 .collapse{
   font-family:HelveticaNeueCyr-Light;
-  font-size:14px;  
-  margin-left: 3.8vw !important;
+  font-size:1.06vw;  
+  margin-left: 1.9vw !important;
 }
+
+
 .mr-auto .mx-auto{
   font-family:HelveticaNeueCyr-Thin;
   font-size:14px;  
-  text-align :left;
-}
+  /*text-align :left;*/
+/*  margin-right: 5vw  !important;
+*/}
 .nav-tel {
+  text-align: right;
   color: rgba(0,0,0,.9);
-  font-size:14px;  
+  font-size:1.06vw;
 }
 .nav-tel span{
-  font-size:18px;  
+  font-size:1.35vw;  
 }
 .dropdown-item{
   font-family:HelveticaNeueCyr-Light;
   font-size: 14px;
+  padding: .17rem 1.5rem;
 }
 .dropdown-menu {
  background-color: #d7e9ce;
  border:none;
  border-radius:0;
+ min-width: 16rem;
 }
 .dropdown-item:hover {
   background-color: #f2f2f2;
@@ -139,6 +153,7 @@ a.navbar-brand{
 .menuBottom{
 	background-color: rgba(242, 242, 242, 0.3);
 	height: 100%;
+padding-left: -125px;
 }
 .menuBottomRight span:hover {
 	padding-bottom: 5px;
@@ -150,16 +165,16 @@ a.navbar-brand{
 }
 .upArrow{
 	position: absolute;
-  bottom: 219px;
-  left: 46px;
+  bottom: 200px;
+  left: 23px;
 }
 .carousel-caption {
-  max-width: 25vw;
+  max-width: 26vw;
   height: 6vw;
   position: absolute;
   font-size: 1.6vw;
-  bottom: 66%;
-  left: 17.5%;
+  bottom: 62.65%;
+  left: 16.5%;
   z-index: 1;
   color: #000;
   text-align: left;
@@ -170,9 +185,9 @@ a.navbar-brand{
 }
 .rightArrow{
 	position: absolute;
-  width: 8.5%;
-  right: -8%;
-  bottom: 8px;
+  width: 7%;
+  right: -9%;
+  bottom: 15px;
   z-index: 1;
   transform: rotate(180deg); 
 }
@@ -181,9 +196,9 @@ a.navbar-brand{
 }
 .leftArrow{
   position: absolute;
-  width: 8.5%;
-  bottom: 0;
-  left: -15%;
+  width: 7%;
+  bottom: 6px;
+  left: -13%;
 }
 .carousel-caption span{
   padding-top: 20px;
@@ -193,11 +208,12 @@ a.navbar-brand{
   font-weight: bold;
   color: #78b660;
   left: 43%;
-  bottom: -13%;
+  bottom: -19%;
 }
 .carousel-caption h5{
   font-family:HelveticaNeueCyr-Bold;
   font-size: 2.2vw;
+  margin-bottom: .3rem;
 }
 .carousel-indicators .active{
 	background-color:#7db52c;
@@ -205,7 +221,7 @@ a.navbar-brand{
 .carousel-indicators{
   z-index: 2;
 	position: absolute;
-	bottom: 26%;
+	bottom: 28.5%;
 	width: 60px;
 }
 .carousel-indicators li{
@@ -226,27 +242,40 @@ footer{
   color: #363636;
   text-align: center;
   z-index: 0;
+  /*border: 1px solid red;*/
 }
 .flowerBottom{
-  width: 140px; 
+  width: 170px; 
   height: 294px;
   position: absolute;
   left: 0;
-  overflow: hidden;
+ /* overflow: hidden;*/
+  /*border: 1px solid red;*/
 }
 .flowerBottomSvg{
   width: 686px;
   height: 390px;
   position: absolute;
-  left: -535px;
-  top: -84px;
+  left: -482px;
+  top: -104px;
 }
 .footerWraper p{
   font-family: HelveticaNeueCyr-Thin;
-  padding: 32px;
+  padding: 15px;
 	font-size: 14px;
   color: rgba(0,0,0,.9);
-  line-height: 2;
+  line-height: 1.87;
+}
+
+
+@media (max-width: 990px){
+  .collapse{
+  font-size:14px;
+}
+.nav-tel{
+  display: none;
+}
+
 }
 @media (min-width: 1400px){
   .wraper{
@@ -255,6 +284,15 @@ footer{
   }
   .w-100{
     width: 1366px!important
+  }
+  .collapse{
+    font-size:14px;{
+  }
+  .nav-tel {
+    font-size:14px;
+  }
+  .nav-tel span{
+    font-size:18px;  
   }
   .carousel-caption{
     font-size: 18px;    
